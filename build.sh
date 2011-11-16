@@ -4,8 +4,8 @@
 ###############################
 project_dir=`pwd` # current dir
 environment_name="staging"
-keychain="xcode"
-keychain_password="helloworld"
+keychain="ci_keys"
+keychain_password="$1"
 workspace="HelloWorld.xcodeproj/project.xcworkspace"
 scheme="HelloWorld" # Make sure that the sceheme is 'shared' in Xcode 4
 info_plist="$project_dir/HelloWorld/HelloWorld-Info.plist"
